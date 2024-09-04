@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>사진전송 및 선택</title>
+</head>
+<body>
+    <h1>사진전송 및 선택</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <label for="img">사진 업로드:</label>
+        <input id="img" type="file" name="photo" accept="image/*"><br><br>
+        
+        <label for="season">계절: </label>
+        <select id="season" name="season">
+            <option value="봄">봄</option>
+            <option value="여름">여름</option>
+            <option value="가을">가을</option>
+            <option value="겨울">겨울</option>
+        </select><br><br>
+
+        <label for="mood">분위기: </label>
+        <select id="mood" name="mood">
+            <option value="미니멀">미니멀</option>
+            <option value="모던">모던</option>
+            <option value="스트릿">스트릿</option>
+            <option value="빈티지">빈티지</option>
+            <option value="캐주얼">캐주얼</option>
+            <option value="러블리">러블리</option>
+            <option value="클래식">클래식</option>
+        </select><br><br>
+        <button type="submit">업로드</button>
+    </form>
+</body>
+</html>
